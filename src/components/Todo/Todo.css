@@ -1,0 +1,17 @@
+.todo-li{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    list-style: none;
+    width: 100%;
+}
+
+.todo{
+    position: relative;
+    height: 30px;
+}
+
+.todo-del{
+    position: absolute;
+    right: 10px;
+}
