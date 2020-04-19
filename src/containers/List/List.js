@@ -6,8 +6,8 @@ import Todos from '../../components/Todos/Todos'
 const List = (props) =>{
     return(
         <div className="todo-list">
-            <AddTodo addTodo = {props.addTodo}/>
-            <Todos todos = {props.state} delTodo = {props.delTodo} complete = {props.complete}/>
+            <AddTodo/>
+            <Todos/>
         </div>
     )
 }

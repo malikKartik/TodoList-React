@@ -1,4 +1,5 @@
 import React from 'react'
+import {connect} from 'react-redux'
 import Todo from '../Todo/Todo'
 const Todos = (props) =>{
     let list = props.todos.map((todo)=>{
@@ -13,4 +14,10 @@ const Todos = (props) =>{
     )
 }
 
-export default Todos
+const mapStateToProps = state =>{
+    return {
+      todos: state
+    }
+  }
+
+export default connect(mapStateToProps)(Todos);
